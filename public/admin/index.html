@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Admin — Portfolio CMS</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body class="admin">
+  <!-- Login -->
+  <div class="login" id="login">
+    <form class="card login-box" id="loginForm">
+      <div class="brand" style="margin-bottom:26px"><span class="dot"></span>Portfolio CMS</div>
+      <h1 style="font-size:28px;margin-bottom:8px">Welcome back</h1>
+      <p style="color:var(--text-2);margin:0 0 24px;font-size:15px">Sign in to manage your projects, research and posts.</p>
+      <div class="field"><label for="pw">Admin password</label><input id="pw" type="password" autocomplete="current-password" required /></div>
+      <button class="btn primary" style="width:100%;margin-top:16px">Sign in</button>
+      <p class="form-msg err" id="loginMsg"></p>
+      <a href="/" class="back" style="margin:8px 0 0">← Back to site</a>
+    </form>
+  </div>
+
+  <!-- App -->
+  <div class="app" id="app" hidden>
+    <aside class="side" id="side">
+      <div class="brand"><span class="dot"></span>Portfolio CMS</div>
+      <nav id="sideNav"></nav>
+      <div class="side-foot">
+        <a class="btn sm" href="/" target="_blank">View site ↗</a>
+        <button class="btn sm" id="logout">Log out</button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="sideToggle" aria-label="Menu">☰</button>
+        <h1 id="pageTitle">Dashboard</h1>
+        <div id="pageActions"></div>
+      </header>
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <!-- Editor drawer -->
+  <div class="drawer" id="drawer">
+    <form class="drawer-box" id="editor">
+      <div class="drawer-head"><h2 id="edTitle">Edit</h2><button type="button" class="icon-btn" id="edClose" aria-label="Close">✕</button></div>
+      <div class="drawer-body" id="edBody"></div>
+      <div class="drawer-foot"><button type="button" class="btn" id="edCancel">Cancel</button><button class="btn primary" id="edSave">Save</button></div>
+    </form>
+  </div>
+
+  <script src="/vendor/marked.min.js"></script>
+  <script src="/vendor/purify.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

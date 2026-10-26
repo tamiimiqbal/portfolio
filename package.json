@@ -1,0 +1,25 @@
+{
+  "name": "tamim-portfolio",
+  "version": "1.0.0",
+  "description": "Premium full-stack portfolio of Md Tamim Iqbal — projects, research, publications, academics and blog with an admin CMS.",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "reset-data": "node server/reset.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.10.0"
+  }
+}

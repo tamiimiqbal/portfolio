@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Md Tamim Iqbal — Research · Engineering · Projects</title>
+  <meta name="description" content="Portfolio of Md Tamim Iqbal — machine learning research, publications, engineering projects, academics and writing." />
+  <meta name="theme-color" content="#05060a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md Tamim Iqbal — Portfolio" />
+  <meta property="og:description" content="Research, publications, projects and academics." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/vendor/github-dark.min.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader"><div style="text-align:center"><div class="mark">Md Tamim Iqbal</div><div class="bar"><i></i></div></div></div>
+  <div class="bg-grid"></div><div class="bg-orb a"></div><div class="bg-orb b"></div><div class="noise"></div><div class="cursor-glow" id="glow"></div>
+  <div class="scroll-progress" id="progress"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand"><span class="dot"></span><span id="brandName">Tamim Iqbal</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#blog">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="kbd-btn" id="cmdkBtn" aria-label="Open command palette">Search <kbd>⌘K</kbd></button>
+      <a href="#contact" class="btn primary sm">Let's talk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="status" id="status"><span class="pulse"></span><span id="availability">Open to opportunities</span></div>
+          <h1 id="heroName"><span class="line"><span>Md Tamim</span></span><span class="line"><span><em>Iqbal</em></span></span></h1>
+          <div class="role">&gt; <span class="typed" id="typed"></span><span class="caret"></span></div>
+          <p class="tagline" id="tagline"></p>
+          <div class="cta">
+            <a href="#projects" class="btn primary">Explore my work <span id="i-arrow"></span></a>
+            <a href="#" class="btn" id="cvBtn" target="_blank" rel="noopener">Download CV <span id="i-dl"></span></a>
+          </div>
+          <div class="socials" id="heroSocials"></div>
+        </div>
+        <div class="portrait">
+          <div class="ring"></div><div class="ring r2"></div>
+          <div class="face" id="face"><span class="initials">TI</span></div>
+          <div class="chip-float c1" id="chip1"></div>
+          <div class="chip-float c2" id="chip2"></div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL<i></i></div>
+    </section>
+
+    <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">01 — About</div><h2 class="title">Research-minded,<br /><em>engineering</em>-driven.</h2></div></div>
+        <div class="about-grid">
+          <div class="about-text rv" id="bio"></div>
+          <div class="rv">
+            <div class="stats" id="stats"></div>
+            <div class="meta-list" id="metaList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMICS -->
+    <section id="academics">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">02 — Academics</div><h2 class="title">Education &amp; <em>scores</em></h2></div><p class="lede">Formal training, results and standardized tests for graduate admissions.</p></div>
+        <div class="acad-grid">
+          <div class="edu" id="edu"></div>
+          <div class="scores" id="scores"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">03 — Research</div><h2 class="title">Publications &amp; <em>papers</em></h2></div><div class="filters" id="pubFilters"></div></div>
+        <div class="pubs" id="pubs"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">04 — Projects</div><h2 class="title">Things I've <em>built</em></h2></div><div class="filters" id="projFilters"></div></div>
+        <div class="proj-grid" id="projGrid"></div>
+        <div class="more-wrap" id="projMore"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">05 — Experience</div><h2 class="title">Research &amp; <em>leadership</em></h2></div></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">06 — Toolkit</div><h2 class="title">Skills &amp; <em>stack</em></h2></div></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">07 — Recognition</div><h2 class="title">Awards &amp; <em>certifications</em></h2></div></div>
+        <div class="ach-grid" id="achGrid"></div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="wrap">
+        <div class="sec-head rv"><div><div class="eyebrow">08 — Writing</div><h2 class="title">Notes &amp; <em>articles</em></h2></div><p class="lede">Research notes, build logs and thoughts on the road to grad school.</p></div>
+        <div class="post-grid" id="postGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="rv">
+          <div class="eyebrow">09 — Contact</div>
+          <h2 class="title">Let's build something <em>meaningful.</em></h2>
+          <a class="big-mail" id="bigMail" href="#"></a>
+          <div><button class="copy-mail" id="copyMail">Copy email</button></div>
+          <p class="lede" style="margin:28px 0 20px">Professors, recruiters and collaborators — I usually reply within 24 hours.</p>
+          <div class="socials" id="contactSocials"></div>
+        </div>
+        <form class="contact card rv" id="contactForm" novalidate>
+          <div class="row2">
+            <div class="field"><label for="cName">Name</label><input id="cName" name="name" required autocomplete="name" /></div>
+            <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" required autocomplete="email" /></div>
+          </div>
+          <div class="field"><label for="cSub">Subject</label><input id="cSub" name="subject" placeholder="Research collaboration, position, project…" /></div>
+          <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" name="message" required></textarea></div>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn primary" type="submit" id="cSend">Send message</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-big" id="footBig">TAMIM IQBAL</div>
+      <div class="foot-row">
+        <span>© <span id="yr"></span> <span id="footName">Md Tamim Iqbal</span>. Designed &amp; engineered from scratch.</span>
+        <a href="#top" class="to-top">Back to top <span id="i-up"></span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-box"><button class="icon-btn modal-close" id="modalClose" aria-label="Close"></button><div id="modalContent"></div></div></div>
+
+  <!-- Command palette -->
+  <div class="cmdk" id="cmdk"><div class="cmdk-box"><input id="cmdkInput" placeholder="Jump to a section, project or paper…" autocomplete="off" /><ul id="cmdkList"></ul></div></div>
+
+  <script src="/vendor/marked.min.js"></script>
+  <script src="/vendor/purify.min.js"></script>
+  <script src="/vendor/highlight.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
